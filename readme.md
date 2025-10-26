@@ -1,7 +1,8 @@
 # EVTX EventData Parser for Timesketch
 
 ## Overview
-This project provides a Python-based parser to enrich CSV exports from **Plaso / log2timeline** for improved analysis in **Timesketch**.
+I was tired of not being able to query for fields when I was working on event logs into timesketch.
+I might improve the parser ofor other kinds of event, but his one is at least working for evtx.
 
 The script (`evtx_parser_enriched.py`) extracts and parses **EventData** fields embedded as XML strings within the `extra` column of `l2tcsv` files, and appends them as new columns. It also enriches the `datetime` column with the `timestamp_desc` value while keeping both fields intact.
 
@@ -106,6 +107,9 @@ Upload `output_enriched.csv` to your Timesketch instance.
 After completion, you’ll have a **Timesketch-ready enriched CSV** that contains:
 - Original Plaso fields.
 - Enriched and parsed XML data from EVTX.
+
+  <img width="915" height="524" alt="Screenshot from 2025-10-25 07-52-11" src="https://github.com/user-attachments/assets/b35bca28-09c3-4b7f-97c5-d4d0d34959c4" />
+
 
 
 ---
