@@ -113,6 +113,9 @@ We have those new fields parsed :
 <img width="1526" height="541" alt="Screenshot from 2025-10-26 11-00-33" src="https://github.com/user-attachments/assets/358b47fc-02ed-46f1-a71b-0c4045f041c3" />
 
 
+In this example, with the new fields, you can see quickly which is the account that got targeted by the attacker (encryption type 0x17): 
+<img width="2195" height="905" alt="Screenshot from 2025-10-25 07-54-58" src="https://github.com/user-attachments/assets/09c7132d-5ced-4517-8aeb-e3a155c4002e" />
+
 ---
 
 **Author:** Rastipnwer  
