@@ -112,5 +112,5 @@ After completion, you’ll have a **Timesketch-ready enriched CSV** that contain
 
 **Author:** Rastipnwer  
 **Version:** 1.0.0  
-**License:** MIT
+**License:** Apache 2.0
 
