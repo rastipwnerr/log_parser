@@ -107,6 +107,7 @@ Upload `output_enriched.csv` to your Timesketch instance.
 After completion, you’ll have a **Timesketch-ready enriched CSV** that contains:
 - Original Plaso fields.
 - Enriched and parsed XML data from EVTX.
+- Example from a HTB sherlock : 
 
   <img width="915" height="524" alt="Screenshot from 2025-10-25 07-52-11" src="https://github.com/user-attachments/assets/b35bca28-09c3-4b7f-97c5-d4d0d34959c4" />
 
