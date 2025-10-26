@@ -118,7 +118,7 @@ def parse_event_data(xml_string: str, event_id: str) -> Dict[str, str]:
         event_id: Event ID to use as prefix
 
     Returns:
-        Dictionary with keys like "4688.SubjectUserSid"
+        Dictionary with keys like "4688_SubjectUserSid"
     """
     parsed_fields = {}
 
@@ -141,7 +141,7 @@ def parse_event_data(xml_string: str, event_id: str) -> Dict[str, str]:
                 value = data_elem.text if data_elem.text is not None else ''
 
                 if name:
-                    # Create prefixed field name: EventID.FieldName
+                    # Create prefixed field name: EventID_FieldName
                     field_key = f"{event_id}_{name}"
                     parsed_fields[field_key] = value
 
