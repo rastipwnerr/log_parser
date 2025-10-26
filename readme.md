@@ -4,8 +4,7 @@
 I was tired of not being able to query for fields when I was working on event logs into timesketch.
 I might improve the parser ofor other kinds of event, but his one is at least working for evtx.
 
-The script (`evtx_parser_enriched.py`) extracts and parses **EventData** fields embedded as XML strings within the `extra` column of `l2tcsv` files, and appends them as new columns. It also enriches the `datetime` column with the `timestamp_desc` value while keeping both fields intact.
-
+The script (`evtx_parser.py`) extracts and parses **EventData** fields embedded as XML strings within the `extra` column of `l2tcsv` files, and appends them as new columns. 
 The result is a fully enriched CSV file ready for import into Timesketch, providing structured visibility into individual event attributes directly extracted from `.evtx` files.
 
 ---
@@ -53,7 +52,6 @@ This generates `output_enriched.csv`, ready for import into **Timesketch**.
   - `date` → `datetime`
   - `time` → `timestamp_desc`
   - `desc` → `message`
-- Enriches the `datetime` field by appending the corresponding `timestamp_desc` value.
 
 ---
 
