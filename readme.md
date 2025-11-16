@@ -16,7 +16,7 @@ The complete process consists of three main stages:
 Use **log2timeline.py** to create a Plaso timeline database from your EVTX logs. 
 
 ```bash
-log2timeline.py Microsoft-Windows-Sysmon-Operational.evtx -storage_file logs.plaso
+log2timeline.py Microsoft-Windows-Sysmon-Operational.evtx --storage_file logs.plaso
 ```
 This will generate a `.plaso` file:
 ```
